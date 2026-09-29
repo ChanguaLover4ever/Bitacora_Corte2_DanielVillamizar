@@ -3,11 +3,9 @@ package com.restaurant.model.domain;
 public class Table {
 
     private String id;
-    private String name;
-    private double price;
-    private String category;
-    private boolean available;
-
+    private int number;
+    private int capacity;
+    private TableState state;
 
     public String getId() {
         return id;
@@ -17,35 +15,27 @@ public class Table {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public int getNumber() {
+        return number;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
-    public double getPrice() {
-        return price;
+    public int getCapacity() {
+        return capacity;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 
-    public String getCategory() {
-        return category;
+    public TableState getState() {
+        return state;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public boolean isAvailable() {
-        return available;
-    }
-
-    public void setAvailable(boolean available) {
-        this.available = available;
+    public void setState(TableState state) {
+        this.state = state;
     }
 }
